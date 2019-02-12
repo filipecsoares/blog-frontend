@@ -1,0 +1,8 @@
+.wrapper-header  {
+    width: 90vw;
+    height: 15vh;
+    padding: 30px;
+    background: #dcbc81;
+    color: #fff;
+    box-shadow: 0 2px 5px -2px grey;    
+}

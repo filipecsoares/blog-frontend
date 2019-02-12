@@ -1,0 +1,6 @@
+.wrapper-content {
+    width: 90vw;
+    height: 78vh;
+    z-index: -9999;
+    top: -60px;    
+}
