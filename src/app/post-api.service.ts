@@ -33,8 +33,9 @@ export class PostApiService {
       );
   }
 
-  getPost(id: number): Observable<Post> {
+  getPost(id: string): Observable<Post> {
     const url = `${apiUrl}/${id}`;
+    console.log(url);
     return this.http.get<Post>(url).pipe(
       tap(_ => console.log(`fetched Post id=${id}`)),
       catchError(this.handleError<Post>(`getPost id=${id}`))
