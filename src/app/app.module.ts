@@ -26,6 +26,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatFormFieldModule } from '@angular/material';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {
     PostsComponent,
     PostDetailComponent,
     PostAddComponent,
-    PostEditComponent
+    PostEditComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
