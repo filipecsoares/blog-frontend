@@ -5,6 +5,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostAddComponent } from './post-add/post-add.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 
+import { CategoriesComponent } from './categories/categories.component';
+
 const routes: Routes = [
   {
     path: 'posts',
@@ -29,6 +31,11 @@ const routes: Routes = [
   { path: '',
     redirectTo: '/posts',
     pathMatch: 'full'
+  },
+  {
+    path: 'categories',
+    component: CategoriesComponent,
+    data: { title: 'List of Categories' }
   }
 ];
 

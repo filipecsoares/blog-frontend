@@ -9,6 +9,7 @@ import { CategoryApiService } from '../category-api.service';
 })
 export class CategoriesComponent implements OnInit {
 
+  displayedColumns: string[] = ['name', 'createdAt'];
   data: Category[] = [];
   isLoadingResults = true;
 
