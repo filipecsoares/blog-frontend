@@ -6,6 +6,7 @@ import { PostAddComponent } from './post-add/post-add.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 
 import { CategoriesComponent } from './categories/categories.component';
+import { CategoryAddComponent } from './category-add/category-add.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,11 @@ const routes: Routes = [
     path: 'categories',
     component: CategoriesComponent,
     data: { title: 'List of Categories' }
+  },
+  {
+    path: 'category-add',
+    component: CategoryAddComponent,
+    data: { title: 'Add Category' }
   }
 ];
 

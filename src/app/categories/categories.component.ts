@@ -19,7 +19,6 @@ export class CategoriesComponent implements OnInit {
     this.api.getCategories()
       .subscribe(res => {
         this.data = res;
-        console.log(this.data);
         this.isLoadingResults = false;
       }, err => {
         console.log(err);

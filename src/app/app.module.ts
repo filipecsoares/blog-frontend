@@ -27,6 +27,7 @@ import {
   MatCardModule,
   MatFormFieldModule } from '@angular/material';
 import { CategoriesComponent } from './categories/categories.component';
+import { CategoryAddComponent } from './category-add/category-add.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CategoriesComponent } from './categories/categories.component';
     PostDetailComponent,
     PostAddComponent,
     PostEditComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CategoryAddComponent
   ],
   imports: [
     BrowserModule,
