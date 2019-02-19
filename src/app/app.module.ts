@@ -28,6 +28,7 @@ import {
   MatFormFieldModule } from '@angular/material';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
+import { CategoryDetailComponent } from './category-detail/category-detail.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CategoryAddComponent } from './category-add/category-add.component';
     PostAddComponent,
     PostEditComponent,
     CategoriesComponent,
-    CategoryAddComponent
+    CategoryAddComponent,
+    CategoryDetailComponent
   ],
   imports: [
     BrowserModule,
