@@ -21,6 +21,7 @@ export class CategoryDetailComponent implements OnInit {
   getCategoryDetails(id) {
     this.api.getCategory(id)
       .subscribe(data => {
+        console.log(data);
         this.category = data;
         this.isLoadingResults = false;
       });

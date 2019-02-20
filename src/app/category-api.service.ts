@@ -35,6 +35,7 @@ export class CategoryApiService {
 
   getCategory(id: string): Observable<Category> {
     const url = `${apiUrl}/${id}`;
+    console.log(url);
     return this.http.get<Category>(url).pipe(
       tap(_ => console.log(`fetched Category id=${id}`)),
       catchError(this.handleError<Category>(`getCategory id=${id}`))

@@ -7,6 +7,7 @@ import { PostEditComponent } from './post-edit/post-edit.component';
 
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
+import { CategoryDetailComponent } from './category-detail/category-detail.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,11 @@ const routes: Routes = [
     path: 'category-add',
     component: CategoryAddComponent,
     data: { title: 'Add Category' }
+  },
+  {
+    path: 'category-details/:id',
+    component: CategoryDetailComponent,
+    data: { title: 'Category Details' }
   }
 ];
 
