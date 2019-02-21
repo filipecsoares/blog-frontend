@@ -29,6 +29,7 @@ import {
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CategoryDetailComponent } from './category-detail/category-detail.compo
     PostEditComponent,
     CategoriesComponent,
     CategoryAddComponent,
-    CategoryDetailComponent
+    CategoryDetailComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
