@@ -9,6 +9,8 @@ import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
 
+import { UsersComponent } from './users/users.component';
+
 const routes: Routes = [
   {
     path: 'posts',
@@ -48,6 +50,11 @@ const routes: Routes = [
     path: 'category-details/:id',
     component: CategoryDetailComponent,
     data: { title: 'Category Details' }
+  },
+  {
+    path: 'users',
+    component: UsersComponent,
+    data: { title: 'List of users' }
   }
 ];
 
