@@ -1,4 +1,11 @@
-.wrapper-content {
-    width: 90vw;
+.wrapper-footer {
+    width: 86vw;
     height: 5vh;
+    padding: 15px;
+    background: #777777;
+    color: #fff;
+    box-shadow: 0 2px 5px -2px black;  
+    text-align: center;  
+    position: fixed;
+    bottom: 10px;
 }
