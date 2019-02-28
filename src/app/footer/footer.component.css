@@ -1,11 +1,16 @@
 .wrapper-footer {
-    width: 86vw;
     height: 5vh;
     padding: 15px;
     background: #777777;
     color: #fff;
     box-shadow: 0 2px 5px -2px black;  
-    text-align: center;  
-    position: fixed;
-    bottom: 10px;
+    text-align: center;
 }
+
+.example-container {
+    position: absolute; 
+    left: 7%; 
+    right: 7%; 
+    bottom: 10px;
+    width: auto;
+  }
