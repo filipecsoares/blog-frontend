@@ -8,6 +8,13 @@
   </div>
   <mat-card class="example-card">
     <form [formGroup]="postForm" (ngSubmit)="onFormSubmit(postForm.value)">
+        <mat-form-field class="example-full-width">
+        <mat-select placeholder="Category">
+          <mat-option *ngFor="let category of categories" [value]="category._id">
+            {{category.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
       <mat-form-field class="example-full-width">
         <input matInput placeholder="Post Title" formControlName="title"
                [errorStateMatcher]="matcher">

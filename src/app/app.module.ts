@@ -28,6 +28,8 @@ import {
   MatSortModule,
   MatTableModule,
   MatFormFieldModule,
+  MatOptionModule,
+  MatSelectModule,
 } from '@angular/material';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
@@ -67,7 +69,9 @@ import { UsersComponent } from './users/users.component';
     MatCardModule,
     MatFormFieldModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatOptionModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
