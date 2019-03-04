@@ -9,8 +9,8 @@
   <mat-card class="example-card">
     <form [formGroup]="postForm" (ngSubmit)="onFormSubmit(postForm.value)">
         <mat-form-field class="example-full-width">
-        <mat-select placeholder="Category">
-          <mat-option *ngFor="let category of categories" [value]="category._id">
+        <mat-select placeholder="Category" formControlName="categories" multiple>
+          <mat-option *ngFor="let category of categoriesList" [value]="category">
             {{category.name}}
           </mat-option>
         </mat-select>

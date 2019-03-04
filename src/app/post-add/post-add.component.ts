@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PostApiService } from '../post-api.service';
 import { CategoryApiService } from '../category-api.service';
-import { FormBuilder, FormGroup, Validators, NgForm } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, NgForm, FormControl } from '@angular/forms';
 import { Category } from '../models/category';
 
 @Component({
@@ -17,6 +17,7 @@ export class PostAddComponent implements OnInit {
   content: string;
   user: {};
   categories: Category[] = [];
+  categoriesList: Category[] = [];
   category: {}
   tags: [];
   isLoadingResults = false;
@@ -26,11 +27,12 @@ export class PostAddComponent implements OnInit {
   ngOnInit() {
     this.postForm = this.formBuilder.group({
       title : [null, Validators.required],
-      content : [null, Validators.required]
+      content : [null, Validators.required],
+      categories : [null, Validators.required]
     });
     this.apiCategory.getCategories()
       .subscribe(res => {
-        this.categories = res;
+        this.categoriesList = res;
         this.isLoadingResults = false;
       }, err => {
         console.log(err);
@@ -39,6 +41,8 @@ export class PostAddComponent implements OnInit {
   }
 
   onFormSubmit(form: NgForm) {
+    console.log(form);
+
     this.isLoadingResults = true;
     this.api.addPost(form)
       .subscribe(res => {

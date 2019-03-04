@@ -14,7 +14,7 @@
     <mat-card-content>
       <dl>
         <dt>Author:</dt>
-        <dd>{{post.user.name}}</dd>
+        <dd>{{!!post.user ? post.user.name : ''}}</dd>
         <dt>Created At:</dt>
         <dd>{{post.createdAt | date}}</dd>
       </dl>
