@@ -23,8 +23,8 @@
         </mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Post Content" formControlName="content"
-               [errorStateMatcher]="matcher">
+        <textarea matInput placeholder="Post Content" formControlName="content"
+               [errorStateMatcher]="matcher" rows="10"></textarea>
         <mat-error>
           <span *ngIf="!postForm.get('content').valid && postForm.get('content').touched">Please enter post content</span>
         </mat-error>
