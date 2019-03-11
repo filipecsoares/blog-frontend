@@ -7,6 +7,15 @@
     <a mat-flat-button color="primary" [routerLink]="['/post-add']"><mat-icon>add</mat-icon></a>
   </div>
   <div class="mat-elevation-z8">
+    <mat-card *ngFor="let i of [1, 2]">
+      <mat-card-header>
+        <mat-icon>more_vert</mat-icon>
+        <mat-card-title>MR. X</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+
+
     <table mat-table [dataSource]="data" class="example-table"
            matSort matSortActive="title" matSortDisableClear matSortDirection="asc">
       
