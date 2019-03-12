@@ -13,6 +13,11 @@
   table {
     width: 100%;
   }
+
+  .card {
+    max-width: 50%;
+    margin: 4px;
+  }
   
   .example-loading-shade {
     position: absolute;
