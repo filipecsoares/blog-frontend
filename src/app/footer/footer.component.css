@@ -8,9 +8,6 @@
 }
 
 .example-container {
-    position: absolute; 
-    left: 7%; 
-    right: 7%; 
-    bottom: 10px;
-    width: auto;
+    position: relative; 
+    padding: 5px;
   }
