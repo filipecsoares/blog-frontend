@@ -30,6 +30,7 @@ import {
   MatFormFieldModule,
   MatOptionModule,
   MatSelectModule,
+  MatGridListModule,
 } from '@angular/material';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
@@ -71,7 +72,8 @@ import { UsersComponent } from './users/users.component';
     MatMenuModule,
     MatListModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

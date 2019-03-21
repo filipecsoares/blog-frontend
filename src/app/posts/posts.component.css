@@ -21,6 +21,10 @@
     margin-left: 20%;
   }
 
+  mat-grid-tile {
+    background: lightblue;
+  }
+
   .example-loading-shade {
     position: absolute;
     top: 0;
