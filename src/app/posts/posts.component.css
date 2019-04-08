@@ -16,6 +16,13 @@
 
   .card {
     max-width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 1%;
+  }
+
+  .buttonList {
+    text-align: right;
   }
 
   mat-grid-tile {

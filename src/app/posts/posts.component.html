@@ -1,4 +1,4 @@
-<div class="example-container mat-elevation-z8">
+<div class="example-container">
   <div class="example-loading-shade"
        *ngIf="isLoadingResults">
     <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
@@ -6,24 +6,20 @@
   <div class="button-row">
     <a mat-flat-button color="primary" [routerLink]="['/post-add']"><mat-icon>add</mat-icon></a>
   </div>
-  <div class="mat-elevation-z8">
-    <mat-grid-list cols="2" rowHeight="2:1">
-      <mat-grid-tile *ngFor="let post of data">
-        <mat-card class="card">
-          <mat-card-header [routerLink]="['/post-details/', post._id]">
-            <mat-card-title>{{post.title}}</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-              {{post.content.substr(0, 20)}}...
-          </mat-card-content>
-          <mat-card-subtitle>{{!!post.user ? post.user.name : ''}}</mat-card-subtitle>
-          <mat-card-subtitle>{{post.createdAt | date}}</mat-card-subtitle>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
+  <div class="center">
+    <mat-card class="card" *ngFor="let post of data">
+      <mat-card-header [routerLink]="['/post-details/', post._id]">
+        <mat-card-title>{{post.title}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          {{post.content.substr(0, 20)}}...
+      </mat-card-content>
+      <mat-card-subtitle>{{!!post.user ? post.user.name : ''}}</mat-card-subtitle>
+      <mat-card-subtitle>{{post.createdAt | date}}</mat-card-subtitle>
+      <mat-card-actions class="buttonList">
+        <button mat-button><mat-icon>mode_edit</mat-icon></button>
+        <button mat-button><mat-icon>delete</mat-icon></button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
