@@ -9,7 +9,7 @@ import { Post } from '../models/post';
   styleUrls: ['./post-detail.component.css']
 })
 export class PostDetailComponent implements OnInit {
-  post: Post = { id: '', title: '', content: '', createdAt: null, tags: null, user: null, categories: null, comments: null };
+  post: Post = { _id: '', title: '', content: '', createdAt: null, tags: null, user: null, categories: null, comments: null };
   isLoadingResults = true;
   constructor(private route: ActivatedRoute, private api: PostApiService, private router: Router) { }
 

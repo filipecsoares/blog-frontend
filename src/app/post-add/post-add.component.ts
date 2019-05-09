@@ -46,7 +46,8 @@ export class PostAddComponent implements OnInit {
     this.isLoadingResults = true;
     this.api.addPost(form)
       .subscribe(res => {
-          const id = res.id;
+        console.log(res);
+          const id = res._id;
           this.isLoadingResults = false;
           this.router.navigate(['/post-details', id]);
         }, (err) => {

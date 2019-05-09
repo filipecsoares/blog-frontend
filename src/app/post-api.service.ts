@@ -44,7 +44,7 @@ export class PostApiService {
 
   addPost(post): Observable<Post> {
     return this.http.post<Post>(apiUrl, post, httpOptions).pipe(
-      tap((pos: Post) => console.log(`added post w/ id=${pos.id}`)),
+      tap((pos: Post) => console.log(`added post w/ id=${pos._id}`)),
       catchError(this.handleError<Post>('addPost'))
     );
   }
