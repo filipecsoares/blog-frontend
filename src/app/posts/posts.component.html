@@ -13,7 +13,7 @@
           <mat-card-title>{{post.title}}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            {{post.content.substr(0, 50)}}...
+            {{post.content.substr(0, 60)}}...
         </mat-card-content>
         <mat-card-subtitle>{{!!post.user ? post.user.name : ''}}</mat-card-subtitle>
         <mat-card-subtitle>{{post.createdAt | date}}</mat-card-subtitle>
